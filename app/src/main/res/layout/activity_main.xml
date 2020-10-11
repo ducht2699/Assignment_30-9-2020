@@ -276,7 +276,7 @@
             android:padding="2dp">
 
             <Button
-                android:id="@+id/buttonDeleteAll"
+                android:id="@+id/buttonDeleteCurrent"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginVertical="2dp"
@@ -363,7 +363,7 @@
             android:padding="2dp">
 
             <Button
-                android:id="@+id/buttonDeleteCurrent"
+                android:id="@+id/buttonDeleteAll"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginVertical="2dp"

@@ -295,12 +295,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 this.math = "false";
                 break;
             case R.id.buttonDeleteCurrent:
-                screen.setText("0");
-                tempNumber = 0;
+                if (this.math.equals("equal")) {
+                    currentCal = 0;
+                    tempNumber = 0;
+                    this.math = "false";
+                    screen.setText("0");
+                    historyCal.setText("");
+                } else {
+                    screen.setText("0");
+                    tempNumber = 0;
+                }
                 break;
             case R.id.buttonDeleteOne:
-                tempNumber /= 10;
-                screen.setText(String.valueOf(tempNumber));
+                if (this.math.equals("equal")) {
+                    currentCal = 0;
+                    tempNumber = 0;
+                    this.math = "false";
+                    screen.setText("0");
+                    historyCal.setText("");
+                } else {
+                    tempNumber /= 10;
+                    screen.setText(String.valueOf(tempNumber));
+                }
+                break;
             case R.id.buttonAdd:
                 addMath("add");
                 historyCal.append(buttonAdd.getText());
